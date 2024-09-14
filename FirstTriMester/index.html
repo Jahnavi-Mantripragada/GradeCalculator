@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grade Calculator</h1>
+        <form id="gradeForm">
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="quiz">Quiz Score:</label>
+                <input type="number" id="quiz" required>
+            </div>
+            <div class="form-group">
+                <label for="quizTotal">Quiz Total:</label>
+                <input type="number" id="quizTotal" required>
+            </div>
+            <div class="form-group">
+                <label for="mid">Mid Score:</label>
+                <input type="number" id="mid" required>
+            </div>
+            <div class="form-group">
+                <label for="midTotal">Mid Total:</label>
+                <input type="number" id="midTotal" required>
+            </div>
+            <div class="form-group">
+                <label for="project">Project Score:</label>
+                <input type="number" id="project" required>
+            </div>
+            <div class="form-group">
+                <label for="projectTotal">Project Total:</label>
+                <input type="number" id="projectTotal" required>
+            </div>
+            <div class="form-group">
+                <label for="cp">Class Participation Score:</label>
+                <input type="number" id="cp" required>
+            </div>
+            <div class="form-group">
+                <label for="cpTotal">Class Participation Total:</label>
+                <input type="number" id="cpTotal" required>
+            </div>
+            <div class="form-group">
+                <label for="credits">Credits:</label>
+                <input type="number" id="credits" required>
+            </div>
+            <button type="button" onclick="calculateGrade()">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
